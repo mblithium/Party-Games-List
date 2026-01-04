@@ -6,6 +6,15 @@ sites.forEach((value) => {
     return;
   }
 
+  function categoryList() {
+    let categoryTags = [];
+    value.categories.forEach((item) => {
+      categoryTags.push(`<span class="tag is-dark p-2 ml-1 mr-1" title="Jogadores suportados">${item}</span>`);
+    });
+    let categoryHTML = categoryTags.join("\n");
+    return categoryHTML;
+  }
+
   let template = `<div class="cell">
     <div class="card">
   <div class="card-image">
@@ -18,9 +27,9 @@ sites.forEach((value) => {
   </div>
   <div class="card-content">
      <div class="container mb-3 is-flex is-justify-content-flex-end">
-        <span class="tag is-info p-2">
+        <span class="tag is-info p-2" title="Jogadores suportados">
           <span class="icon">
-            <i class="fa-solid fa-user-group"></i>
+            <i class="fa-solid fa-user-group""></i>
           </span>
           <span>
             ${value.min_players || 0} - ${value.max_players || ""} jogadores
@@ -37,6 +46,9 @@ sites.forEach((value) => {
       <div class="is-flex is-align-items-center">
         <p class="title is-4">${value.name || "sem nome"}</p>
       </div>
+    </div>
+    <div class="container mb-3 mt-3 is-flex is-justify-content-flex-start">
+        ${categoryList()}
     </div>
     <div class="content mt-5 mb-5">
       ${value.description || "Sem descrição"}

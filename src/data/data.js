@@ -134,7 +134,7 @@ const sites = [
         langs: ["en"]
     },
     {
-        name: "Scrabble",
+        name: "Play Scrabble",
         description: "Scrabble online",
         categories: ["puzzle", "word", "games"],
         modes: ["online"],
@@ -143,7 +143,7 @@ const sites = [
         max_players: 2,
         how_to_play: "",
         link: "https://playscrabble.com/",
-        icon: "",
+        icon: "./src/img/site-icons/play-scrabble.png",
         thumb: "./src/img/site-thumbs/scrabble.png",
         langs: ["en"]
     },
@@ -157,7 +157,7 @@ const sites = [
         max_players: 4,
         how_to_play: "",
         link: "https://colonist.io",
-        icon: "",
+        icon: "./src/img/site-icons/colonist.png",
         thumb: "./src/img/site-thumbs/colonist.png",
         langs: ["en", "pt-BR"]
     },
@@ -199,5 +199,27 @@ const sites = [
         link: "https://brokenpicturephone.com",
         icon: "./src/img/site-icons/brokenpicturephone.ico",
         thumb: "./src/img/site-thumbs/brokenpicturephone.png"
+    },
+    {
+        name: "PostitGuess.io",
+        description: "Jogo estilo \"Quem sou eu?\" online. Não é necessário criar uma conta, só uma sala e jogar.",
+        categories: ["guessing"],
+        min_players: 2,
+        max_players: 10,
+        how_to_play: "Crie um nome, selecione um avatar e uma sala, depois, adicione nomes aos jogadores para cada um adivinhar qual é o seu.",
+        link: "https://postitguess.io/",
+        icon: "./src/img/site-icons/postitguessio.png",
+        thumb: "./src/img/site-thumbs/postitguessio.png"
+    },
+    {
+        name: "Who\'s that?",
+        description: "Jogo estilo \"Quem sou eu?\" online. Este necessita criar uma conta para jogar e possui uma lista de temas dos próprios jogadores.",
+        categories: ["guessing"],
+        min_players: 2,
+        max_players: 10,
+        how_to_play: "Crie um nome, selecione um avatar e uma sala, depois, adicione nomes aos jogadores para cada um adivinhar qual é o seu.",
+        link: "https://whos-that.com/",
+        icon: "./src/img/site-icons/whosthat.png",
+        thumb: "./src/img/site-thumbs/whosthat.png"
     },
 ]
